@@ -10,7 +10,8 @@
 ## Agreed development approach
 
 - Use VS Code for local development on Windows.
-- Use uv to manage Python dependencies and virtual environments; setup is pending.
+- Use uv to manage Python 3.13 dependencies and virtual environments.
+- Target .NET 10 for the ASP.NET Core API.
 - Give equal learning attention to Python/computer vision and C#/.NET backend engineering.
 - Keep Docker as an option for later deployment; it is not required for initial development.
 - Develop through pair programming, discussing major technical decisions before adopting them.
@@ -61,4 +62,4 @@ We assumed you already own a Litter-Robot, want to use your C#/.NET expertise, a
 - `infra/` local Compose and optional IaC
 - `data/labels/` no committed video or personal data
 
-The starter project intentionally contains **documentation, not untested executable application code**.
+The initial executable scaffold includes a Python startup check and an API health endpoint. Camera capture, ML, persistence, and the dashboard are not implemented yet.

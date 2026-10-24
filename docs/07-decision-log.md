@@ -16,3 +16,13 @@
 | D-12 | Deploy to Jetson/Pi | Only after profiling | Avoid premature hardware expense |
 
 Add entries whenever a design tradeoff is resolved. Include alternatives rejected, rationale, consequences, and date.
+
+## Confirmed development setup — 2026-10-24
+
+- Name: LitterLens; one repository with worker and API folders.
+- Python 3.13 with uv; .NET 10 API. Approved together before scaffolding.
+- Keep Python metadata and its environment in `src/edge`; API in `src/api`.
+- Use the installed Python 3.13 rather than installing 3.12 without a dependency compatibility need.
+- Use .NET 10 rather than .NET 8 for the new project and its longer support runway.
+- Docker remains a possible deployment option, not a development prerequisite.
+- Learning gives equal attention to Python/computer vision and .NET; discuss major decisions together.

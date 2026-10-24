@@ -1,3 +1,11 @@
-# Edge
+# LitterLens Python worker
 
-Planned Python RTSP capture, detection, visit state machine and buffered delivery.
+Run from the repository root:
+
+```powershell
+uv sync --project src/edge --locked
+uv run --project src/edge --locked litterlens-edge
+```
+
+Currently prints a startup status and exits. Capture, detection, visit segmentation,
+and buffered delivery remain planned.

@@ -1,0 +1,13 @@
+[project]
+name = "litterlens-edge"
+version = "0.1.0"
+description = "LitterLens video-processing worker"
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[project.scripts]
+litterlens-edge = "litterlens_edge:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"

@@ -1,3 +1,11 @@
-# API
+# LitterLens API
 
-Planned ASP.NET Core Web API, auth, persistence, idempotent ingest, review routes.
+Run from the repository root:
+
+```powershell
+dotnet run --project src/api/LitterLens.Api.csproj
+```
+
+Check `http://localhost:5050/api/health` in a browser or with `Invoke-RestMethod`.
+Currently exposes only process health. Authentication, persistence, ingest, and
+review routes remain planned.
