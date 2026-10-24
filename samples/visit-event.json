@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "visitId": "0199f220-7d13-7b50-98aa-bb03938271d4",
+  "cameraId": "litter-cam-01",
+  "startedAtUtc": "2026-10-17T22:31:10Z",
+  "endedAtUtc": "2026-10-17T22:31:53Z",
+  "catId": "cat-a",
+  "identityConfidence": 0.91,
+  "wasteType": "unknown",
+  "wasteConfidence": null,
+  "reviewStatus": "needs_review",
+  "modelVersions": {
+    "detector": "yolo-baseline-0.1",
+    "identity": "cat-id-0.1",
+    "waste": "not_deployed"
+  },
+  "reasonCodes": [
+    "elimination_not_visible"
+  ],
+  "clipRef": null
+}

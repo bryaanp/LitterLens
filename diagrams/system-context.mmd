@@ -1,0 +1,12 @@
+flowchart LR
+  Cat[Cat approaching robot] --> Camera[Fixed external IR camera]
+  Camera -->|RTSP over LAN| Vision[Python edge worker]
+  Vision -->|visit event / idempotency key| API[ASP.NET Core API]
+  Vision -->|limited clips| Media[(Local clip store)]
+  API --> DB[(SQLite/PostgreSQL)]
+  API --> Dashboard[Web dashboard]
+  Dashboard -->|manual corrections| API
+  Dataset[Verified labeled visit dataset] --> Trainer[Optional model training]
+  API -.-> Dataset
+  Trainer -->|versioned model| Vision
+  Robot[Optional robot telemetry] -.-> API

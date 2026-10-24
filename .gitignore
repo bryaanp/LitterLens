@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!*.example
+bin/
+obj/
+node_modules/
+dist/
+build/
+.idea/
+.vscode/
+.DS_Store
+# No personal media/model checkpoints in source control
+data/raw/
+data/clips/
+data/images/
+*.mp4
+*.mov
+*.avi
+*.onnx
+*.pt
+*.pth
+*.engine
